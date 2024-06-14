@@ -7,13 +7,14 @@ $CONFIG = [
   'instanceid' => 'd3c944a9a',
   'trusted_domains' =>
    [
-    'nextcloud.meetfur.com',
     'brylnfyizwbb9nqu0stv-postgresql.services.clever-cloud.com',
+    'nextcloud.meetfur.com',
+    'app-c60a335e-652d-4bab-9725-2a1cffa5df32.cleverapps.io'
    ],
 
    'datadirectory' => '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/',
 
-   'version' => '0.1',
+   //'version' => '0.1',
 
    'dbtype' => 'pgsql',
    'dbhost' => getenv("POSTGRESQL_ADDON_HOST"),
