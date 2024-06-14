@@ -93,7 +93,7 @@ $CONFIG = [
  *
  * Default to ``data/`` in the Nextcloud directory.
  */
-'datadirectory' => '/var/www/nextcloud/data',
+//'datadirectory' => '/var/www/nextcloud/data',
 
 /**
  * The current version number of your Nextcloud installation. This is set up
@@ -285,7 +285,7 @@ $CONFIG = [
  *
  * Defaults to ``core/skeleton`` in the Nextcloud directory.
  */
-'skeletondirectory' => '/path/to/nextcloud/core/skeleton',
+'skeletondirectory' => '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/core/skeleton',
 
 
 /**
@@ -1180,8 +1180,8 @@ $CONFIG = [
  */
 'apps_paths' => [
 	[
-		'path'=> '/var/www/nextcloud/apps',
-		'url' => '/apps',
+		'path'=> '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/',
+		'url' => '/',
 		'writable' => true,
 	],
 ],
