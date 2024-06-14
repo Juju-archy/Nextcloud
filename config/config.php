@@ -15,7 +15,7 @@ $CONFIG = [
 
    'version' => '0.1',
 
-   'dbtype' => 'pgsql'
+   'dbtype' => 'pgsql',
    'dbhost' => getenv("POSTGRESQL_ADDON_HOST"),
    'dbname' => getenv("POSTGRESQL_ADDON_NAME"),
    'dbuser' => getenv("POSTGRESQL_ADDON_USER"),
