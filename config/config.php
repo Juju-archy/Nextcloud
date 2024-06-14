@@ -13,7 +13,7 @@ $CONFIG = [
 
    'datadirectory' => '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/,'
 
-   'version' => '0.1',
+//   'version' => '0.1',
 
    'dbtype' => 'pgsql',
    'dbhost' => getenv("POSTGRESQL_ADDON_HOST"),
