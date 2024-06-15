@@ -12,7 +12,7 @@ $CONFIG = [
     'app-c60a335e-652d-4bab-9725-2a1cffa5df32.cleverapps.io'
    ],
 
-   'datadirectory' => '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/',
+   //'datadirectory' => '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/',
 
    'version' => '0.1',
 
