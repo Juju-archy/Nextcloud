@@ -21,7 +21,7 @@ $CONFIG = [
    'dbname' => getenv("POSTGRESQL_ADDON_NAME"),
    'dbuser' => getenv("POSTGRESQL_ADDON_USER"),
    'dbpassword' => getenv("POSTGRESQL_ADDON_PASSWORD"),
-   //'installed' => true,
+   'installed' => true,
 
    'default_locale' => 'fr_FR',
    'default_phone_region' => 'FR',
