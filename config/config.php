@@ -4,15 +4,12 @@ $CONFIG = [
 /**
  * Default Parameters
  */
-  'instanceid' => 'd3c944a9a',
   'trusted_domains' =>
    [
     'brylnfyizwbb9nqu0stv-postgresql.services.clever-cloud.com',
     'nextcloud.meetfur.com',
     'app-c60a335e-652d-4bab-9725-2a1cffa5df32.cleverapps.io'
    ],
-
-   //'datadirectory' => '/home/bas/app_c60a335e-652d-4bab-9725-2a1cffa5df32/',
 
    'version' => '0.1',
 
@@ -21,13 +18,31 @@ $CONFIG = [
    'dbname' => getenv("POSTGRESQL_ADDON_NAME"),
    'dbuser' => getenv("POSTGRESQL_ADDON_USER"),
    'dbpassword' => getenv("POSTGRESQL_ADDON_PASSWORD"),
+   
+   /**
+   * Indicates whether the Nextcloud instance was installed successfully; ``true``
+   * indicates a successful installation, and ``false`` indicates an unsuccessful
+   * installation.
+   *
+   * Defaults to ``false``
+   */
    //'installed' => true,
 
-   'default_locale' => 'fr_FR',
+   /**
+   * Add request id to the database query in a comment.
+   *
+   * This can be enabled to assist in mapping database logs to Nextcloud logs.
+   */
+   'db.log_request_id' => true,
+
+
+
+   'default_locale' => 'fr_FR'
+   'default_language' => 'fr',
    'default_phone_region' => 'FR',
    'default_timezone' => 'Europe/Paris',
 
-   'knowledgebaseenabled' => true,
+   'knowledgebaseenabled' => false,
    'allow_user_to_change_display_name' => true,
 
    'auth.bruteforce.protection.enabled' => true,
@@ -76,6 +91,14 @@ $CONFIG = [
         'OC\Preview\TIFF',
         'OC\Preview\EMF',
   ],
+
+  /**
+  * Lifetime of the remember login cookie. This should be larger than the
+  * session_lifetime. If it is set to 0 remember me is disabled.
+  *
+  * Defaults to ``60*60*24*15`` seconds (15 days)
+  */
+  'remember_login_cookie_lifetime' => 60*60*24*15,
 
 
 ];
