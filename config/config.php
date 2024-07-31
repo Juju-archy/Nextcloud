@@ -18,7 +18,6 @@ $CONFIG = [
    'dbname' => getenv("POSTGRESQL_ADDON_NAME"),
    'dbuser' => getenv("POSTGRESQL_ADDON_USER"),
    'dbpassword' => getenv("POSTGRESQL_ADDON_PASSWORD"),
-   'installed' => true,
    
    /**
    * Indicates whether the Nextcloud instance was installed successfully; ``true``
@@ -27,7 +26,7 @@ $CONFIG = [
    *
    * Defaults to ``false``
    */
-   //'installed' => true,
+   'installed' => true,
 
    /**
    * Add request id to the database query in a comment.
@@ -64,7 +63,7 @@ $CONFIG = [
   'preview_max_y' => 4096,
   'preview_max_filesize_image' => 50,
   'preview_max_memory' => 256,
-  'enabledPreviewProviders' => array(
+  'enabledPreviewProviders' => [
         'OC\Preview\BMP',
         'OC\Preview\GIF',
         'OC\Preview\JPEG',
@@ -89,7 +88,7 @@ $CONFIG = [
         'OC\Preview\SVG',
         'OC\Preview\TIFF',
         'OC\Preview\EMF',
-  ),
+  ],
 
   /**
   * Lifetime of the remember login cookie. This should be larger than the
@@ -97,7 +96,7 @@ $CONFIG = [
   *
   * Defaults to ``60*60*24*15`` seconds (15 days)
   */
-  'remember_login_cookie_lifetime' => 60*60*24*15
+  'remember_login_cookie_lifetime' => 60*60*24*15,
 
 
 ];
