@@ -26,7 +26,8 @@ $CONFIG = [
    *
    * Defaults to ``false``
    */
-   //'installed' => true,
+   'installed' => true,
+   'instanceid' => '',
 
    /**
    * Add request id to the database query in a comment.
