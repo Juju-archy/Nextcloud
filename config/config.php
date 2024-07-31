@@ -35,7 +35,7 @@ $CONFIG = [
    */
    'db.log_request_id' => true,
 
-   'force_language' => 'fr',
+   //'force_language' => 'fr',
    'default_phone_region' => 'FR',
    'default_locale' => 'fr_FR',
    'default_timezone' => 'Europe/Paris',
@@ -63,40 +63,32 @@ $CONFIG = [
   'preview_max_y' => 4096,
   'preview_max_filesize_image' => 50,
   'preview_max_memory' => 256,
-  'enabledPreviewProviders' => [
-        'OC\Preview\BMP',
-        'OC\Preview\GIF',
-        'OC\Preview\JPEG',
-        'OC\Preview\Krita',
-        'OC\Preview\MarkDown',
-        'OC\Preview\MP3',
-        'OC\Preview\OpenDocument',
-        'OC\Preview\PNG',
-        'OC\Preview\TXT',
-        'OC\Preview\XBitmap',
-        'OC\Preview\Font',
-        'OC\Preview\HEIC',
-        'OC\Preview\Illustrator',
-        'OC\Preview\Movie',
-        'OC\Preview\MSOffice2003',
-        'OC\Preview\MSOffice2007',
-        'OC\Preview\MSOfficeDoc',
-        'OC\Preview\PDF',
-        'OC\Preview\Photoshop',
-        'OC\Preview\Postscript',
-        'OC\Preview\StarOffice',
-        'OC\Preview\SVG',
-        'OC\Preview\TIFF',
-        'OC\Preview\EMF',
+  'enabledPreviewProviders' => 
+  [
+      'OC\Preview\BMP',
+      'OC\Preview\GIF',
+      'OC\Preview\JPEG',
+      'OC\Preview\Krita',
+      'OC\Preview\MarkDown',
+      'OC\Preview\MP3',
+      'OC\Preview\OpenDocument',
+      'OC\Preview\PNG',
+      'OC\Preview\TXT',
+      'OC\Preview\XBitmap',
+      'OC\Preview\Font',
+      'OC\Preview\HEIC',
+      'OC\Preview\Illustrator',
+      'OC\Preview\Movie',
+      'OC\Preview\MSOffice2003',
+      'OC\Preview\MSOffice2007',
+      'OC\Preview\MSOfficeDoc',
+      'OC\Preview\PDF',
+      'OC\Preview\Photoshop',
+      'OC\Preview\Postscript',
+      'OC\Preview\StarOffice',
+      'OC\Preview\SVG',
+      'OC\Preview\TIFF',
+      'OC\Preview\EMF',
   ],
-
-  /**
-  * Lifetime of the remember login cookie. This should be larger than the
-  * session_lifetime. If it is set to 0 remember me is disabled.
-  *
-  * Defaults to ``60*60*24*15`` seconds (15 days)
-  */
-  'remember_login_cookie_lifetime' => 60*60*24*15,
-
 
 ];
