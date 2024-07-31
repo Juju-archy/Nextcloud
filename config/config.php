@@ -37,7 +37,7 @@ $CONFIG = [
 
 
 
-   'default_locale' => 'fr_FR'
+   'default_locale' => 'fr_FR',
    'default_phone_region' => 'FR',
    'default_timezone' => 'Europe/Paris',
 
